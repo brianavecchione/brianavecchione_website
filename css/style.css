@@ -13,7 +13,7 @@ h2 {
     font-size: 3rem; 
     padding: 1rem; 
     margin: 0 0 0 0;
-    font-weight: 300;}
+    font-weight: 300; }
 h3 {
     font-size: 2rem; 
     font-weight: 300;} 
@@ -27,10 +27,11 @@ body, html {
     font-size: 16px;
     color: #222222; }
 
+
 a, a:hover {
     color: inherit;
     text-decoration: none;
-    cursor: default; }
+    cursor: crosshair; }
 
 ul {
     margin: 0;
@@ -54,6 +55,10 @@ p {
     margin: 0 auto;
     width: 100%; }
 
+#about .content {
+    background-color: 000000;
+}
+
 .navbar .content p {
     font-weight: bold; }
 
@@ -63,7 +68,9 @@ p {
 .header {
     position: relative;
     overflow: hidden;
-    height: 30rem; }
+    height: 30rem; 
+    background-color: #FFFFFF;
+    text-decoration: #000000;}
 
 section { 
     padding: 1rem; 
@@ -72,7 +79,7 @@ section {
 footer {
     margin-top: 4rem;
     padding: 5rem;
-    background-color: #222;
+    background-color: #222222;
     color: white;
     text-align: center; }
 footer p {
@@ -113,7 +120,7 @@ nav ul li:hover {
 
 nav ul li.action-item {
     color: white;
-    background-color: #212121; }
+    background-color: #5a4557; }
 
 nav ul li.action-item:hover {
     color: white;
@@ -124,6 +131,7 @@ nav ul.right { float:right; }
 
 body, html {
     height: 100%;
+    margin: 0 0 0 0;
 }
 
 nav {
@@ -139,7 +147,7 @@ div.header {
 
 .content{
     top: 0;
-    z-index: 1;
+    z-index: 1 ;
     background-color: white;
     transition: 0.2s ease background-color;
 }
@@ -156,7 +164,7 @@ div.header {
     background-repeat: no-repeat;
     background-size: cover;
     margin: 0px 0px 0px 0px;
-    z-index: -1;
+    z-index: 1;
 }
 
 .header h1 {
@@ -211,6 +219,7 @@ h6 {
     margin-left: -40px;
     line-height: 1;
     z-index: 2;
+
 }
 
 .favicons li {
@@ -253,4 +262,4 @@ h6 {
 }
 
 html,body,div,span,applet,object,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{border:0;font-size:100%;font:inherit;vertical-align:base
-    e;margin:0;padding:0}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}body{line-height:1}ol,ul{list-style: }blockquote,q{quotes:none}blockquote:before,blockquote:after,q:before,q:after{content:none}table{border-collapse:collapse;border-spacing:0}
+    e;margin:0;padding:0}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}body{line-height:1}ol,ul{list-style: none}blockquote,q{quotes:none}blockquote:before,blockquote:after,q:before,q:after{content:none}table{border-collapse:collapse;border-spacing:0}
