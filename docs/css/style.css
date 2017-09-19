@@ -160,7 +160,7 @@ div.header {
 	top:0;
     background-color: #5a4557;
     cursor: default;
-    background-image: url("img/nyc.jpg");
+    background-image: url("/img/nyc.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     margin: 0px 0px 0px 0px;
