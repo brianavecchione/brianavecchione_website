@@ -45,70 +45,190 @@
       <!-- Page Heading -->
       <h1 class="my-4">Mentorship, Partnerships, Community Building & Volunteer</h1>
       <hr>
-      <h3>Cornell Tech: Women in Entrepreneurship and Technology New York</h3>
-      <h4>Developer Mentor (2017)</h4>
-      <p>I served as a mentor for a team of students interested in learning more about the technical development process. Part of the experience was a 2-day product sprint, where teams were required to build out a civic product that would help senior centers on Roosevelt Island operate more efficiently. My team ideated a platform where seniors could easily submit feedback, register for classes, contact their officials, and view events. During the sprint, I taught students the basics of HTML, CSS, JavaScript, and Git. Final presentations were hosted by Bloomberg NY.</p>
-      <h4>Panelist (2016, 2017)</h4>
-      <p>I served as a panelist for students to discuss civic technology, data science, and the work being done in both spaces by Microsoft NY.</p>
-      <hr>
-      <h3>NYC Parks: Data Mentorship</h3>
-      <p>I've served as a data mentor</p>
-      <hr>
-      <h3>Wogrammer NY</h3>
-      <p></p>
-      <h3>Civic Hacker Hours</h3>
-      Provided hosting, mentorship, & scheduled speakers for the duration of Civic Hacker Hours 
-Provide coffee hours to students and professionals looking for work in civic tech
 
-      <h3>Senior Civic Tech Fellowship</h3>
-Provide resources, support, and management to summer civic tech fellows 
+            <h3>APA National Planning Conference DataJam</h3>
+        <div class="row">
+        <div class="col-sm-4">
+          <img style="width:100%;" src="img/apa.png">
+        </div>
+        <div class="col-sm-8">
+          <h6>Challenge Question: How can sites that are administrative locations rather than service locations be identified in FacDB?</h6>
+          <p>I partnered with BetaNYC at the APA National Planning Conference Datajam to ideate a technical methodology for improving location confidence intervals in NYC facilities database.</p>
 
-Provide hackathon mentorship and team leadership at various hackathons/events around the NYC area
-Attain & distribute BizSpark keys for tech events, provide some Azure support
-Create TCE-NY github repo for TCE fellows 
-Includes general info, expectations, scope, ny-specific literature, ny-specific policies, email & surface setup, and onboarding checklist
-Provide resources and mentorship to incoming TCE fellow class of summer 2017
-      <h3>Partnerships</h3>
-      <hr>
-      <h5><a href="http://heatseek.org/">HeatSeek NYC</a></h5>
-      <p>Partner with HeatSeek to build data dashboard using NYC residential heat sensor data</p>
-      <div>
-        <iframe width="680" height="510" src="https://msit.powerbi.com/view?r=eyJrIjoiMDVjODRmZmQtMTgyZS00ZWMzLWJhYTQtOTMwODcxOWMwYmNmIiwidCI6IjcyZjk4OGJmLTg2ZjEtNDFhZi05MWFiLTJkN2NkMDExZGI0NyIsImMiOjV9" frameborder="0" allowFullScreen="true"></iframe>
+          <h6>The Problem:</h6>
+          <ul>
+            <li><b>Misleading Locations</b>: Locations may be inaccurate due to data sources (may refer to org mailing/billing address instead of service location)</li>
+            <li><b>Inconsistency</b>: Community based orgs do not have consistent service locations & may provide services at administrative location (unable to make sweeping assumptions)</li>
+          </ul>
+
+          <p>We were able to successfully geocode >6k sites and plot using Mapzen. From there, we presented a four-part methodology:</p>
+          <ol>
+            <li>Geocode admin addresses, cross-reference with facilities program sites</li>
+            <li>Split by [category] (FACgroup? FACsubgrp?) & Eliminate subgroups that are more likely to be verified (i.e., parks, housing, schools, etc.)</li>
+            <li>Manual classification for training set (validate admin service locations vs. service locations) — should be done by subject matter experts. (a. Remove/examine duplicates, b. Use zoning restrictions for location validation)</li>
+            <li>Run through ML models for testing set CI</li>
+          </ol>
+
+            <h6>Datasets Used:</h6>
+            <ul>
+              <li><a href="https://carto.capitalplanning.nyc/user/cpadmin/tables/provideradminaddresses/public/map">Administrative addresses from HHS Accelerator</a>: Known administrative addresses for orgs with City contracts and provide social services</li>
+              <li><a href="https://data.cityofnewyork.us/Social-Services/Benefits-and-Programs-API/2j8u-wtju">Operator’s websites and Access NYC API data</a>: Program info provided by organizations and website urls</li>
+            </ul>
+
+              <p>The methodology was taken internally by the NYC facilities team.</p>
+        </div>
       </div>
       <hr>
 
-Network with NYC Campaign Finance Bureau & build relationships with partners for NYC debate sponsor application, draft application 
-<hr>
-Partner with BetaNYC at the APA National Planning Conference Datajam to technical methodology for improving location confidence intervals in NYC facilities database
-<blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">Developing &amp; presenting ML methodology for classifying admin vs service locations in FacDB at <a href="https://twitter.com/BetaNYC">@BetaNYC</a> <a href="https://twitter.com/APA_Planning">@APA_Planning</a> <a href="https://twitter.com/NYCPlanning">@NYCPlanning</a> <a href="https://twitter.com/hashtag/Datajam?src=hash">#Datajam</a> <a href="https://t.co/MJCaKD0Czv">pic.twitter.com/MJCaKD0Czv</a></p>&mdash; Briana Vecchione (@brianavecchione) <a href="https://twitter.com/brianavecchione/status/861642732363812865">May 8, 2017</a></blockquote>
-<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
-<hr>
-Partner with AINow to provide civic insight into social AI applications
-<hr>
-Provide onsite tech support for City Hall Paperless Stated
-<hr>
-Partner with NYCParks & BetaNYC to provide data mentorship at NYC Open Data for All Workshop: Digging into TreesCount! Data
-<blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">Data mentoring for today with <a href="https://twitter.com/NYCParks">@NYCParks</a> <a href="https://twitter.com/nycforward">@nycforward</a> <a href="https://twitter.com/BetaNYC">@BetaNYC</a> for <a href="https://twitter.com/hashtag/treescount?src=hash">#treescount</a>! 🌳📊 <a href="https://t.co/vbB1p2JuDJ">pic.twitter.com/vbB1p2JuDJ</a></p>&mdash; Briana Vecchione (@brianavecchione) <a href="https://twitter.com/brianavecchione/status/840582760083406848">March 11, 2017</a></blockquote>
-<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
-<hr>
-Provide technical support for BetaNYC lecture at the Glass Room
-<blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">Working tech for <a href="https://twitter.com/noneck">@noneck</a> at <a href="https://twitter.com/hashtag/glassroom?src=hash">#glassroom</a> to discuss the paradox between privacy &amp; open data in NYC <a href="https://t.co/nIKZn2XccN">pic.twitter.com/nIKZn2XccN</a></p>&mdash; Briana Vecchione (@brianavecchione) <a href="https://twitter.com/brianavecchione/status/809868008441135104">December 16, 2016</a></blockquote>
-<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
-<hr>
+      <h3>HeatSeek NYC</h3>
+      <div class="row">
+        <div class="col-sm-4">
+          <iframe width="100%" height="70%" src="https://msit.powerbi.com/view?r=eyJrIjoiMDVjODRmZmQtMTgyZS00ZWMzLWJhYTQtOTMwODcxOWMwYmNmIiwidCI6IjcyZjk4OGJmLTg2ZjEtNDFhZi05MWFiLTJkN2NkMDExZGI0NyIsImMiOjV9" frameborder="0" allowFullScreen="true"></iframe>
+        </div>
+        <div class="col-sm-8">
+          <p>HeatSeek is a civic tech nonprofit dedicated to "empowering 
+            tenants, landlords, community organizations, and the justice system to tackle our city’s heating crisis". The team places low-cost heat sensors in local residential units to track temperature data and monitor via a webapp. In doing this, they hold landlords accountable, inform housing policy, and provide evidence to verify heating code abuse claims in housing court.</p>
+
+            <p>I was approached by HeatSeek to create a prototype data analytics dashboard comparing public 311 heating complaints with HeatSeek sensors. The team was interested in using Power BI for their analytics because of its ease of use in generating analytics for varying technical abilities. The resulting dashboard can be viewed on the left. There are four main functions:</p>
+
+            <ul>
+              <li><b>NYC Trends</b>: Shows rate of change for complaints by zip code</li>
+              <li><b>Violation Analysis</b>: Shows addresses with most complaints & their locations</li>
+              <li><b>Violation Search</b>: Search tool for monthly violation count per address or apartment unit</li>
+              <li><b>Apartment Search</b>: Search tool tracking indoor vs. outdoor temperatures by address or apartment unit </li>
+            </ul>
+
+            <p>For more on HeatSeek, see <a href="http://heatseek.org/">here</a>.</p>
+        </div>
+      </div>
+      <hr>
 
 
-Work with DataKind to host Machine Eatable series 
-Work with MalalaFund to host UN Week Reactor event
-Represent TCE and civic tech through CodeNewbie podcast guest feature
+    <h3>NYC Parks: Data Mentorship</h3>
+      <div class="row">
+        <div class="col-sm-4">
+          <iframe src="https://brianavecchione.cartodb.com/viz/a2037d6c-2a81-11e6-a318-0e8c56e2ffdb/embed_map" width="100%" height="70%" frameborder="0" allowfullscreen="allowfullscreen"></iframe>
+        </div>
+        <div class="col-sm-8">
+          <h4>2016 National Day of Civic Hacking</h4>
+          <p>My team sponsored the NYC Parks TreesCount! DataJam, prompting the city’s civic technology, data, and design communities to to make sense of New York’s latest and most spatially accurate urban forest dataset. The census mapped 530,000 trees, including the entirety of Manhattan, The Bronx, and Staten Island (80% of all NYC streets). Some goals and challenges revolved around quantifying how NYC’s forest has changed over time, understanding how the census can be correlated with local economic and environmental indicators, increasing civic stewardship/education, and improving its current and future health. I wrote a blog post recapping my team's participation and project submission <a href="https://blogs.microsoft.com/newyork/2016/06/22/nyc-treescount-data-jam-a-day-of-civic-voluntreeism/">here</a>.</p>
+          <h4>NYC Open Data for All Workshop: Mentor</h4>
+          <p>NYC Parks has been offering free programs at the city's Computer Resource Centers to support public access to open data. The workshops introduce participants to the NYC Open Data portal and teach basic analysis skills. I served as a mentor for the first NYC Open Data for All Workshop: "Digging into TreesCount! Data". At this workshop, I helped train and answer questions from participants around data collection, manipulation, analysis, and visualization.</p>
+        </div>
+      </div>
+      <hr>
 
-Intelligent Kiosk
-Upgrade internal API keys for TCE events
-Configure surface for intelligent kiosk setup
-Create github repo with requirements & documentation
-Scope and purchase hardware for demo
+      <h3>City Hall Paperless Stated</h3>
+      <div class="row">
+        <div class="col-sm-4">
+          <a href="https://council.nyc.gov/press/2016/10/27/134/"><img style="width:100%;" src="img/ps.png"></a>
+        </div>
+        <div class="col-sm-8">
+          <p>Recently, New York's city council decided to pilot 'Paperless Stated', an initiative dedicated to reducing paper use and modernizing the nature of civic work. Surfaces were introduced into the City Council's Stated meeting to help members better navigate large documents. During the digital experience, I assisted with training and technical support for city council members who had questions about surface tablets. The experience was published on <a href="https://council.nyc.gov/press/2016/10/27/134/">NY City Council's site</a>.</p>
+        </div>
+      </div>
+      <hr>
 
+      <h3>Cornell Tech: Women in Entrepreneurship and Technology New York (WiTNY)</h3>
+      <div class="row">
+        <div class="col-sm-4">
+          <img style="width:100%;" src="img/witny.png">
+        </div>
+        <div class="col-sm-8">
+          <h4>Developer Mentor (2017)</h4>
+      <p>I served as a mentor for a team of students interested in learning more about the technical development process. Part of the experience was a 2-day product sprint, where teams were required to build out a civic product that would help senior centers on Roosevelt Island operate more efficiently. My team ideated a platform where seniors could easily submit feedback, register for classes, contact their officials, and view events. During the sprint, I taught students the basics of HTML, CSS, JavaScript, and Git. Final presentations were hosted by Bloomberg NY.</p>
+      <h4>Panelist (2016, 2017)</h4>
+      <p>I served as a panelist for students to discuss civic technology, data science, and the work being done in both spaces by Microsoft NY.</p>
+        </div>
+      </div>
+      <hr>
 
-<h4>Misc. Relevant Participation</h4>
+      <h3>Wogrammer NY</h3>
+      <div class="row">
+        <div class="col-sm-4">
+          <a href="http://www.wogrammer.org/"><img style="width:100%;" src="img/wogrammer.png"></a>
+        </div>
+        <div class="col-sm-8">
+          <h4>Head of Operations</h4>
+          <p>Wogrammer NY was the first local chapter to celebrate, support, and connect accomplished women in tech in the New York area. The organization (Endorsed by <a href="http://www.businessinsider.com/sheryl-sandberg-is-trying-to-get-the-new-term-wogrammers-to-catch-on-2015-8">Sheryl Sandberg</a>) was initially founded by two Facebook engineers looking to break stereotypes around women in technology. I served as the Head of Operations for Wogrammer NY. During this time, I organized and executed the launch event (Hosted by Facebook NY).</p>
+          <h6>Duties Included:</h6>
+          <ul>
+            <li>Program curation: Keynote, speakers, lineup, etc.</li>
+            <li>Event catering</li>
+            <li>Advertising/Press</li>
+          </ul>
+            <p>After the launch, I was responsible for contacting, interviewing, and publishing Wogrammer NY features on the dedicated Facebook fan page. I was also responsible for delegating Facebook ad credits to optimize user engagement. Eventually, chapters began to spawn around the country. I helped organize and curate their respective launches and features. The chapters have since been discontinued, but the project lives on through <a href="https://twitter.com/wogrammer?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor">Twitter</a> and <a href="https://medium.com/@wogrammer">Medium</a>.</p>
+        </div>
+      </div>
+      <hr>
+
+      <h3>Civic Hacker Hours</h3>
+      <div class="row">
+        <div class="col-sm-4">
+          <a href="https://www.meetup.com/hackerhours/members/"><img style="width:100%;" src="img/hh.png"></a>
+        </div>
+        <div class="col-sm-8">
+          <p>Civic Hacker Hours was created from a want to further connect technical workers in the NYC area. I established a weekly event at Civic Hall where anyone could come and share projects, ask questions, and work collaboratively. By creating a civic focus, Hacker Hours attendees all came with similar intent. At the meetups, I provided hosting, catering, and technical mentorship. I also scheduled speakers to present projects, tutorials, and open-call hackathon contributions. For those interested in starting a career in civic tech, I held office hours for any questions and/or recommendations. The Civic Hacker Hours event was created from the <a href="https://www.meetup.com/hackerhours/members/">Hacker Hours meetup community</a>.</p>
+        </div>
+      </div>
+      <hr>
+
+<h3>DataKind/Microsoft: Machine Eatable</h3>
+<div class="row">
+        <div class="col-sm-4">
+          <img style="width:100%;" src="img/machineeatable.png">
+        </div>
+        <div class="col-sm-8">
+          <p>I assisted with the planning, hosting, and general support of Machine Eatable, a lunchtime series hosted by DataKind, Microsoft, and Civic Hall. Some of the events I was on the planning team for include:</p>
+          <ul>
+            <li>J. Nathan Matias: Citizen-Led Social Experiments in Democratic Society</li>
+            <li>Raluca Dragusanu and Susan Sun: Best Practices in Pro Bono Data Science Project Scoping and Execution</li>
+            <li>Liz Barry, Sarah Lamdan, Bronwen Densmore, Bethany Wiggins, Laurie Allen, Jerome Whitington, and Brendan O’Brian: Rescuing Government Data</li>
+            <li>Samarth Bhaskar and Hannah Poferl: The Journey from Analytics to Editorial</li>
+            <li>Evan Estola: When Recommendation Systems Go Bad </li>
+            <li>Mimi Onuoha and Zara Rahman: Illustrating Data Literacy</li>
+ </p>
+        </div>
+      </div>
+      <hr>
+
+<h3>CodeNewbie Podcast Ep. 137: Intro to Data Science</h3>
+<div class="row">
+        <div class="col-sm-4">
+          <a href="https://www.codenewbie.org/podcast/intro-to-data-science"><img style="width:100%;" src="img/podcast.png"></a>
+        </div>
+        <div class="col-sm-8">
+          <p>I was invited on CodeNewbie's podcast to discuss data science and its civic application. In the episode, I discuss my work in this space, my position at Microsoft, involvement with NASA, and resources for those interested in getting started. The podcast can be found <a href="https://www.codenewbie.org/podcast/intro-to-data-science">here</a>.</p>
+
+          <h6>Description: (Taken from CodeNewbie)</h6>
+          <p>"If you've heard of open data, big data, and data science and never quite knew what it was all about, this episode is for you. Briana helps us explore the different steps it takes to answer a complex data question with code, giving us a tour of the data science world along the way. We talk about the importance and difficulty of cleaning data, the role of ethics in data collection and analysis, and how a codenewbie can dig into this fascinating topic."</p>
+        </div>
+      </div>
+      <hr>
+
+      <h3>MalalaFund</h3>
+<div class="row">
+        <div class="col-sm-4">
+          <a href=""><img style="width:100%;" src="img/malalafund.png"></a>
+        </div>
+        <div class="col-sm-8">
+          <p>During UN Week in NYC, we partnered with MalalaFund, UN Women, and the UN Inter-agency Network on Youth Development's Working Group on Youth and Gender Equality to host an intergenerational dialogue on Investing in Adolescnt Girls and Young Women in the Refugee Crisis. During this event, I provided various event support (program, catering, advertising). The event was recorded and can be found <a href="http://www.worldpeaceever.tv/development-and-environment/218-adolescent-girls-and-young-women-in-refugee-crisis.html">here</a>.</p>
+        </div>
+      </div>
+      <hr>
+
+       <h3>AINow 2017: Volunteer Staff</h3>
+      <div class="row">
+        <div class="col-sm-4">
+          <a href="https://artificialintelligencenow.com/"><img style="width:100%;" src="img/ainow.png"></a>
+        </div>
+        <div class="col-sm-8">
+          <p>I served as volunteer staff to support various event operations for AINow 2017 at the MIT Media Lab. I wrote a recap blog post of the event for Microsoft, found <a href="https://blogs.microsoft.com/newyork/2017/07/20/ainow-symposium-recap-addressing-the-social-implications-of-ai/">here</a>.</p>
+        </div>
+      </div>
+      <hr>
+
+<h3>Misc. Relevant Participation</h3>
 <h6>The following events were attended for their relevance in civic and technical applications:</h6>
 <ul>
   <li>UN Women panel</li> 
@@ -119,6 +239,7 @@ Scope and purchase hardware for demo
   <li>Data & Society DataBite Series</li>
   <li>CodeLand</li>
   <li>CS Fair NYC</li>
+  <li>The Glass Room NYC</li>
   <li>State of NYC</li>
   <li>BigApps launch</li>
   <li>UN Foundation Social Good Summit</li>
