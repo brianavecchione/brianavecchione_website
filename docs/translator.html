@@ -43,26 +43,84 @@
     <div class="container">
 
       <!-- Page Heading -->
-      <h1 class="my-4">Microsoft Translator</h1>
+      <h1 class="my-4">Microsoft Translator </h1>
 
-      Translator
-  IDNYC
-Programmed desktop microphones to accept keyboard input 
-Configured surfaces to simplify workflow for IDNYC employees
-Assisted with registration splash page and implementation of userscripts 
-Provided technical training for IDNYC staff (sole member to train MML employees)
-Provided on-site support during technical difficulties for both locations (schedule with intake directors for both locations, provide updates)
-Setup Typeform & collected/aggregated data via Heap Analytics
-Scoped IDNYC locations to determine best setup for usability 
-Ordered Translator microphone and headset equipment 
-Order and program NFC stickers for demos 
-  PEU
-Establish & build relationships with Mayor’s Public Engagement Unit for Translator beta-testing 
-Onsite canvassing using Translator for healthcare registration
-Research/application architecture for possible development of an IVR solution using Translator speech API
+    <hr>
+  <div class="row">
+    <div class="col-sm-6"><img width="100%" src="img/t3.png"></div>
+    <div class="col-sm-6"><img width="100%" src="img/t4.png"></div>
+  </div>
+<hr>
 
 
+<h3>Background</h3>
 
+<p>Recently, my team has been interested in the opportunity to use Microsoft's free language translation tools to help New Yorkers access government services by lowering language barriers. We decided to pilot Microsoft Translator, a tool that offers voice and text translation in over 60 languages and works without a data connection. The City expressed interest in dedicating these resources towards New York City's municipal identification services, IDNYC.</p>
+
+<p>IDNYC is the largest municipal identification card program in the nation with over 700,000 approved card applications processed at 18 locations across the city. Because New York City is home to eight million residents who speak over 800 languages, it was clear IDNYC offered a unique opportunity to assist staff and applicants with language translation.</p>
+
+<p>To address this, we piloted Microsoft Translator around IDNYC registration centers in the NYC area. Members of our team conducted a two-hour long training session at the beginning of the pilot period as well as in-person visits at each location three to four times per week. This proved useful in assisting with tool usage, handling technical difficulties, and getting personal feedback from IDNYC staff. My responsibilities for this pilot were as follows:</p>
+
+<ul>
+  <li>Programmed desktop microphones to accept keyboard input</li>
+  <li>Configured surfaces for IDNYC employees</li>
+  <li>Assisted building registration splash page and custom userscripts</li>
+  <li>Provided technical training for IDNYC staff (sole member training most employees)</li>
+  <li>Provided on-site support during technical difficulties for both locations</li>
+  <li>Set up feedback form and analyzed data</li>
+  <li>Researched and ordered microphone and headset equipment</li>
+  <li>Ordered and programed NFC stickers for misc. demos</li>
+  <li>Built and maintained positive relationships with city employees</li>
+</ul> 
+<hr>
+
+<h3>Usage</h3>
+<p>During each use, an IDNYC staff member and applicant would sit across from each other at a desk, each with their own Surface device and desktop microphone. My team built a splashpage which prompted the applicant with an agreement form. The applicant selected their preferred language and localized terms of use. From there, we built custom userscripts to auto-populate API parameters to create an easier product flow for users. To speak, each user held down the button on the desktop mic and spoke clearly. At the end of the session, the user exited the conversation and the conversation cache was wiped.</p>
+
+<p>Privacy concerns were [understandably] a priority for IDNYC employees. To combat this, Translator scrubs anything that sounds like a name or number (SSN, telephone number, etc) and saves sample sizes of non-consecutive words. Of course, logging can be omitted entirely using the API.</p>
+
+<p>Overall, the pilot was positively received by staff and visitors. Spanish and French translations received especially positive reviews. In addition to Mandarin translation, the ease of the user experience each received mixed reviews that indicate they could be improved, particularly for occasions in which one or more users do not already expect translation technology to be involved.</p>
+
+<hr>
+<h3>Feedback and Reflection</h3>
+
+<p>We encouraged staff to fill out feedback forms with a series of self-reported metrics on how successful the encounter had been. One of the initial findings by TCE was that conversations did not align neatly into English-only and pure foreign language. A number of visitors spoke some English but were not fluent. For these users, Translator proved helpful for particular sentences, snippets, or even individual words. So while some users tapped into the full potential of Translator, others benefited from a hybrid approach that only used Translator intermittently. Hand gestures continued to be common during the use of Translator.</p>
+
+<p>Overall, IDNYC was receptive to the pilot and staff seemed eager to further integrate. Translator received an 8.08 utility satisfaction rate, a 7.33 satisfaction rate for ease of use, and a 7.67 satisfaction rate for whether the tool assisted with conversation flow.</p>
+
+<p>New York City, like many municipalities, currently uses Language Line Solutions for translation services – at a cost of $4/minute. Calculating estimated usage, that adds up to $60/day and$300/week in translation costs for each and every location. We found that the use of Translator would cost less than two weeks of the current system. Over the course of a year, a single IDNYC location could save $15,600, adding up to a total of $280,800 annually across the entire program.</p>
+
+<p>Our pilot was credited in the <a href="https://blogs.microsoft.com/ai/2016/12/13/microsoft-translator-erodes-language-barrier-person-conversations/#sm.001i2p5rx1djjdhpzn82e2hsfex3f">product launch</a> late last year. To try Microsoft Translator, see <a href="https://translator.microsoft.com/
+">here</a>.
+
+<hr>
+<h3>Testimonials</h3>
+
+ <div class="row">
+    <div class="col-sm-6">
+      <img width="49%" src="img/t1.png">
+      <img width="49%" src="img/t2.png">
+    </div>
+    <div class="col-sm-6">
+      <p><i>“I observed an IDNYC staff member communicate with an elderly Russian woman. The staff first greeted the applicant using [Microsoft Translator] and gestured for her to do the same. Once she realized she could communicate without much trouble, a huge smile spread over her face and she gave us a big thumbs-up. She was clearly very impressed! It really made me feel like our work extended past language borders and I can’t wait to see what the future holds with this technology.”</p>
+
+      <p>“I had a French speaking applicant come in and I was able to use the translator to communicate with him quite well.”</p>
+
+      <p>“We used Translator with a Hungarian applicant…When I was typing, she was reading and she was saying, “Okay” and “Igen” (which means yes, in Hungarian) with such a positive tone. I felt happy because of her positive reaction. I think she really enjoyed using the Translator because it showed that we really wanted to communicate with her despite speaking different languages.”</i></p>
+    </div>
+  </div>
+
+<hr>
+<h3>Future Work</h3>
+
+<p>Going forward, the city is interested in expanding these services to help New Yorkers sign up for healthcare or public benefits by way of door-to-door and/or phone canvassing. For this work, my responsibilties have been the following:
+
+<ul>
+  <li>Research app architecture for possible development of an IVR solution using Translator speech API</li>
+  <li>Onsite canvassing using Translator for healthcare registration</li>
+  <li>Establish & build relationships with city employees</li>
+</ul>
+<hr>
     </div>
     <!-- /.container -->
 
