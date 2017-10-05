@@ -8,6 +8,11 @@ body {
     padding-top: 54px;
 }
 
+body.main {
+	padding-top: 4rem !important;
+	background-color:#343a40;
+}
+
 @media (min-width: 992px) {
     body {
         padding-top: 56px;
@@ -23,9 +28,12 @@ a:hover {
 	color:darkslategray;
 }
 
+h1.main-my-4 {
+	color: white;
+}
+
 img.card-img-top {
 	height: 9em;
-	filter: grayscale(100%);
 }
 
 img.card-img-top:hover {
