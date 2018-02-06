@@ -1,170 +1,111 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <title>Briana Vecchione</title>
-        <meta http-equiv="content-type" content="text/html; charset=utf-8" />
-        <meta name="description" content="Briana Vecchione's Website" />
-        <link rel="stylesheet" href="css/style.css"/>
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css"/>
-        <script src="http://d3js.org/d3.v3.min.js"></script>
- 		<script src="http://d3js.org/topojson.v1.min.js"></script>
-  		<script src="http://datamaps.github.io/scripts/datamaps.world.min.js?v=1"></script>
-  		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
-		<!--<script src="jquery.sticky.js"></script>
-		<script> $(window).load(function(){ $("#nav").sticky({ topSpacing: 0 }); }); </script>-->
-    	<link rel="icon" href="img/favicon.ico" type="image/x-icon"/>
-    </head>
-    <body>
 
-    <!-- Header -->
-    <div class="header">
-            <h1>Briana Vecchione</h1>
-            <br>
-            <div class="favicons">
-                <ul>
-                	<li><div class="hvr-grow"><a href="http://twitter.com/brianavecchione"><i class="fa fa-twitter-square"></i></a></div></li>
-                    <li><div class="hvr-grow"><a href="https://www.linkedin.com/in/brianavecchione"><i class="fa fa-linkedin-square"></i></a></div></li>
-                    <li><div class="hvr-grow"><a href="https://github.com/brianavecchione"><i class="fa fa-github"></i></a></div></li>
-                    <li><div class="hvr-grow"><a href="http://facebook.com/briana.vecchione"><i class="fa fa-facebook-square"></i></a></div></li>
-                    <li><div class="hvr-grow"><a href="http://medium.com/@brianavecchione"><i class="fa fa-medium"></i></a></div></li>
-                </ul>
-                <div class="img-circular"></div>
-            </div>
+  <head>
 
-            <!-- Navigation -->
-            <div class="nav">
-                <a href="#briana"></a>
-            </div>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Briana Vecchione</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom fonts for this template -->
+    <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i" rel="stylesheet">
+    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <link href="vendor/devicons/css/devicons.min.css" rel="stylesheet">
+    <link href="vendor/simple-line-icons/css/simple-line-icons.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="css/resume.min.css" rel="stylesheet">
+
+  </head>
+
+  <body id="page-top">
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
+      <a class="navbar-brand js-scroll-trigger" href="#page-top">
+        <span class="d-block d-lg-none">Briana Vecchione</span>
+        <span class="d-none d-lg-block">
+          <img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="img/briana.jpg" alt="">
+        </span>
+      </a>
+      <ul class="list-inline list-social-icons mb-0">
+            <li class="list-inline-item">
+              <a href="https://twitter.com/brianavecchione">
+                <span class="fa-stack fa-lg">
+                  <i class="fa fa-circle fa-stack-2x"></i>
+                  <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
+                </span>
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a href="https://www.linkedin.com/in/brianavecchione/">
+                <span class="fa-stack fa-lg">
+                  <i class="fa fa-circle fa-stack-2x"></i>
+                  <i class="fa fa-linkedin fa-stack-1x fa-inverse"></i>
+                </span>
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a href="https://github.com/brianavecchione">
+                <span class="fa-stack fa-lg">
+                  <i class="fa fa-circle fa-stack-2x"></i>
+                  <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+                </span>
+              </a>
+            </li>
+          </ul>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#about">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="BV_FinalCV.pdf">CV</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <div class="container-fluid p-0">
+
+      <section class="resume-section p-3 p-lg-5 d-flex d-column" id="about">
+        <div class="my-auto">
+          <h1 class="mb-0">Briana
+            <span class="text-primary">Vecchione</span>
+          </h1>
+          <div class="subheading mb-5">@brianavecchione ·
+            <a>[first].[last]@gmail.com</a>
+          </div>
+          <p class="mb-5">I'm a budding researcher and data scientist interested in improving algorithmic fairness, accountability, and transparency as well as bettering urban and civic processes. My work has been supported by scholarships from the National Science Foundation, the Association of Computing Machinery, and the Anita Borg Institute. Most recently, I served as a Microsoft Fellow on the <a href="http://microsoftnewyork.com/2016/07/20/fellow-profile-briana-vecchione/">Technology & Civic Engagement team</a>, where I worked on a variety of projects ranging from from developing a series of open data dashboards for local government to bringing cloud-based language translation services to New York’s municipal ID card applicants. Before that, I spent some time at Microsoft Research and the Federal Reserve Board of Governors.</p>
+
+          <p class="mb-5">I'm a proud member of <a href="https://datasociety.net/">Data & Society</a>, <a href="https://beta.nyc/">BetaNYC</a>, <a href="https://open.nasa.gov/explore/datanauts/">NASA Datanauts</a>, and the Microsoft Research reading group on fairness, accountability, transparency, and ethics in machine learning. I'm also an avid public speaker and have been a panelist, feature, or keynote at venues like Bloomberg, Microsoft, Facebook, Sony, the Metropolitan Museum of Art, Cornell Tech, and Carnegie Mellon. From time to time, I also host cryptoparties around the NYC area.</p>
+
+          <p class="mb-5">If you'd like to chat, feel free to reach me at briana.vecchione [at] gmail or <a href="https://twitter.com/brianavecchione">@brianavecchione</a> on Twitter. If you prefer to use a PGP key, you can do that <a href="pgp.txt">here</a>.</p>
+
         </div>
-        <div class="navbar">
-            <nav>
-                <div class="content">
-                    <ul>
-                        <li class="action-item"></li>
-                        <li><a href="#about"><p>About</p></a></li>
-                        <li><a href="#speaking-press"><p>Speaking & Press</p></a></li>              
-                    </ul>
-                </div>
-            </nav>
-        </div>
+      </section>
 
-        <!--About -->
-        <section id="about">
-            <div class="content">
-                <h2 class="about">About</h2>
+    </div>
 
-                <p>Briana Vecchione is a researcher & data scientist studying fairness, accountability,
-                    transparency, and ethics in machine learning & artificial intelligence. Currently, she works as a Senior Fellow within
-                    <a href="http://microsoftnewyork.com/2016/07/20/fellow-profile-briana-vecchione/"> Microsoft New York's Technology & Civic
-                        Engagement team</a> and <a href="https://open.nasa.gov/explore/datanauts/">NASA's Datanaut</a> program. Previously, Briana’s
-                    worked on various projects through <a href="https://ds3.research.microsoft.com/doc/citibike.pdf"> Microsoft Research</a>,
-                    the Federal Reserve Board of Governors, the Manhattan Borough President's Office, Square, & others. She's an award-winning
-                    scholar with organizations like the National Science Foundation, the Association of Computing Machinery,
-                    and the Anita Borg Institute.</p>
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
-                <p>A frequent public speaker, Briana has been seen at venues like Bloomberg, Microsoft, Facebook, Sony, the
-                    Metropolitan Museum of Art, Cornell Tech, and Carnegie Mellon. She's an active member of <a href="https://datasociety.net/">Data & Society</a> and <a href="https://beta.nyc/">BetaNYC</a> as well as a discussion group participant within the Microsoft Research ML/AI fairness group.
+    <!-- Plugin JavaScript -->
+    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
 
-		<p>In her free time, Briana gives cryptoparty workshops on digital privacy and security to at-risk communities in the New York City area.</p>
+    <!-- Custom scripts for this template -->
+    <script src="js/resume.min.js"></script>
 
-                <p>You can email her  at briana.vecchione [at] gmail or <a href="https://twitter.com/brianavecchione">@brianavecchione</a> on Twitter. If you prefer to use a
-                PGP key, you can do that <a href="pgp.txt">here</a>.</p>
-
-        	</div>
-        </section>
-
-        <!-- Speaking & Press -->
-        <section id="speaking-press">
-            <div class="content">
-                <h2>Speaking</h2>
-                <ul>
-		  <li><a>NASA HQ | August 2017</a><br>
-		        Datanauts Panelist</li>
-		  <li><a>AINow 2017: MIT | July 2017</a><br>
-		        Experts workshop participant</li>
-		  <li><a>SOHO20 Safe Security for Artists Cryptoparty | May 2017</a><br>
-		        Workshop on online privacy and digital security</li>
-		  <li><a>APA National Planning Conference Datajam | May 2017</a><br>
-		        Present technical methodology to improve location confidence intervals in NYC facilities database.</li> 
-		  <li><a>Microsoft Power BI Workshop | April 2017</a><br>
-			Mentor Manhattan Borough President's office to contextualize NYC's 311 service request data</li>
-		  <li><a>The Fierce Urgency of Now: Staying Safe Online | March 2017</a><br>
-		        Workshop on online privacy and digital security</li>
-		  <li><a>Arab American Association: Security & Privacy Workshop | March 2017</a><br>
-		        Workshop on online privacy and digital security</li>
-                    <li><a>NASA Headquarters: Datanauts Cohort Kickoff | February 2017 </a><br>
-                        Presentation on VR first-person Mars explorer game</li>
-                    <li><a>NYU: Women in Computer Science | February 2017</a><br>
-                        Presentation on intro to data science & civic tech</li>
-		 <li><a>Microsoft: "Protect Yo'Self" - A day of workshops on security and online privacy | January 2017</a><br>
-		        Led interactive workshop on digital privacy</li>
-		  <li><a>Microsoft Reactor: Civic Demo Night | January 2017</a><br>
-                        Presentation on Civic Graph </li>
-                    <li><a>Forward Union | December 2016</a><br>
-                        Presentation on privacy and security in the digital age </li>
-                    <li><a>Civic Hall: BetaNYC - Code for America Recap | November 2016</a><br>
-                        Recap of the 2016 Code for America Summit </li>
-                    <li><a>Pace University: Lean In Circle - Pace Women in Tech | November 2016</a><br>
-                        Presentation on work done through Microsoft Civic Tech Fellowship </li>
-                    <li><a>Microsoft Civic Demo | August 2016</a><br>
-                        Presentation on Civic Graph </li>
-                    <li><a>CodeNewbies: New York Chapter Launch | August 2016</a><br>
-                        Presentation on work done through the NASA Datanaut Program </li>
-                    <li><a>Cornell Tech: Women in Technology & Entrepreneurship New York | August 2016</a><br>
-                        Panelist on WiTNY developer panel to discuss Civic Tech Fellowship at Microsoft NY </li>
-                    <li><a>Metropolitan Museum of Art: Media Lab | June 2016</a><br>
-                      Presentation of Microsoft Technology & Civic Engagement work: Civic Graph, Tech Jobs Academy, Microsoft Translator </li>
-		    <li><a>Intrepid Sea, Air, & Space Museum: GOALS for Girls - Let's be Techies</a></br>
-		      Presentation on data science & applications of computer science education</li>
-                    <li><a>Carnegie Mellon University: 2015 oSTEM Conference | November 2015</a><br>
-                        Invited panelist discussing best practices for recruitment & retention of women in tech</li>
-                    <li><a>Facebook New York: Wogrammer NY Chapter Launch | October 2015</a><br>
-				Launch NY wogrammer chapter and speak on D&I initiatives in tech</li>
-				<li><a>ChickTech NYC: "Big Dream" Screening at Sony Wonder Lab | September 2015</a><br>
-				Panelist discussing best practices for recruitment and retention of women in tech</li>
-				<li><a>Federal Reserve Board of Governors | August 2015</a><br>
-				Presentation on analysis of internal ETL process and real time operational dashboard.</li>
-				<li><a>Aalto University Product Design Gala | May 2015</a><br>
-				Presentation on ABB-sponsored ship control software engineering project</li>
-				<li><a>ACM Richard Tapia Celebration of Diversity in Computing | February 2015</a><br>
-				Presentation on locally re-routing users to improve the flow of bike share programs</li>
-				<li><a>TedXFultonStreet | October 2014</a><br>
-				Presented on Data Science applications through projects with Aalto University, ABB, Microsoft Research, and Orange Mobile</li>
-				<li><a>ACM SIGKDD at Bloomberg | August 2014</a><br>
-				Presentation on locally re-routing users to improve the flow of bike share programs</li>
-				<li><a>Microsoft Research DS3 Final Presentation | August 2014</a><br>
-                    Presentation on locally re-routing users to improve the flow of bike share programs</li>
-				</ul>
-				<h2>Press</h2>
-				<ul>
-		    <li><a href="https://blogs.microsoft.com/newyork/2017/07/20/ainow-symposium-recap-addressing-the-social-implications-of-ai/">AINow Symposium Recap: Addressing the Social Implications of AI </a>(July 2017)</li>
-		    <li><a href="https://www.facebook.com/spaceappschallenge/videos/1428637347182207/">SpaceApps 2017 Datanaut Livestream </a>(April 2017)</li>
-		    <li><a href="https://blogs.microsoft.com/newyork/2017/04/05/nyc-computer-science-opportunity-fair-brings-stem-to-students/">Microsoft New York - NYC Computer Science Opportunity Fair Brings STEM to Students </a>(April 2017)</li>
-                    <li><a href="https://www.facebook.com/CivicHallNYC/photos/a.1014516538574878.1073741830.946432998716566/1635593303133862/?type=3&theater">Civic Hall - Member Monday Feature </a>(February 2017)</li>
-                    <li><a href="https://www.youtube.com/watch?v=TCNGSvf8U1M&app=desktop">BetaTalk - Best of Mozilla Festival and Code for America Summit 2016 </a>(November 2016)</li>
-                    <li><a href="http://microsoftnewyork.com/2016/11/18/looking-forward-in-civic-tech-code-for-america-summit-and-beyond/">Looking Forward in Civic Tech: Code for America Summit and Beyond </a>(November 2016)</li>
-                    <li><a href="http://www.huffingtonpost.com/entry/58029ab3e4b06f314afeb56a?timestamp=1476627816360">Huffington Post Feature </a>(October 2016)</li>
-                    <li><a href="http://microsoftnewyork.com/2016/08/18/the-endless-civic-tech-summer/">The Endless [Civic Tech] Summer </a>(August 2016)</li>
-                <li><a href="http://microsoftnewyork.com/2016/07/20/fellow-profile-briana-vecchione/">Microsoft NY Fellow Profile </a>(July 2016)</li>
-                <li><a href="http://microsoftnewyork.com/2016/06/22/nyc-treescount-data-jam-a-day-of-civic-voluntreeism/">NYC TreesCount! Data Jam: A Day of Civic Voluntreeism </a>(June 2016)</li>
-                    <li><a href="https://medium.com/@ReigningIt/women-who-reign-briana-vecchione-ebf18359f781#.f5zh9m1hj">Reigningit Feature </a>(January 2016)</li>
-				<li><a href="http://www.pace.edu/mypace/dance-to-big-data">Pace University: Student Feature</a> (September 2015)</li>
-				<li><a href="http://anitaborginstitute.tumblr.com/post/129160126659/ghc-scholar-briana-vecchione">Anita Borg Institute: Grace Hopper Scholar Feature</a> (September 2015)</li>
-				<li><a href="http://seidenbergnews.blogs.pace.edu/2015/08/03/briana-is-spending-her-summer-as-a-data-science-intern-in-our-countrys-capital/">Seidenberg School News</a> (July 2015)</li>
-				<li><a href="http://blogs.msdn.com/b/msr_er/archive/2015/02/19/celebrating-diversity-in-computing.aspx">Microsoft Research Connections: Celebrating diversity in computing</a> (February 2015)</li>
-				<li><a href="http://gracehopper.anitaborg.org/scholars/briana-vecchione/">Anita Borg Institute: Grace Hopper Scholar Feature</a> (October 2014)</li>
-				<li><a href="http://www.mattstempeck.com/2014/08/07/racial-profiling-and-bike-sharing-urban-data-science-at-microsoft-research/">Racial Profiling and Bike Sharing: Urban Data Science at Microsoft Research</a> (August 2014)</li>
-				<li><a href="http://www.decisionsciencenews.com/2014/08/16/student-data-science-citibike-stop-frisk/">Undergraduate Summer Projects at Microsoft Research NYC</a> (August 2014)</li>
-				</ul>
-            </div>
-        </section>
-        <br>
   </body>
 
-            </div>
-        </section>
-            </body>
-            </div>
-            </body>
-            </html>
-
+</html>
