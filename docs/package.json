@@ -1,8 +1,8 @@
 {
-    "title": "Resume",
-    "name": "startbootstrap-resume",
-    "version": "4.0.0",
-    "description": "Resume is a simple, yet elegant resume and CV theme for Bootstrap 4.",
+    "title": "Portfolio Item",
+    "name": "startbootstrap-portfolio-item",
+    "version": "4.1.1",
+    "description": "A portfolio item HTML template built with Bootstrap",
     "keywords": [
         "css",
         "sass",
@@ -11,9 +11,9 @@
         "theme",
         "template"
     ],
-    "homepage": "https://startbootstrap.com/template-overviews/resume",
+    "homepage": "https://startbootstrap.com/template-overviews/portfolio-item",
     "bugs": {
-        "url": "https://github.com/BlackrockDigital/startbootstrap-resume/issues",
+        "url": "https://github.com/BlackrockDigital/startbootstrap-portfolio-item/issues",
         "email": "feedback@startbootstrap.com"
     },
     "license": "MIT",
@@ -23,21 +23,14 @@
     ],
     "repository": {
         "type": "git",
-        "url": "https://github.com/BlackrockDigital/startbootstrap-resume.git"
+        "url": "https://github.com/BlackrockDigital/startbootstrap-portfolio-item.git"
     },
     "dependencies": {
-        "bootstrap": "4.0.0",
-        "devicons": "^1.8.0",
-        "jquery": "3.3.1",
-        "simple-line-icons": "^2.4.1"
+        "bootstrap": "4.1.1",
+        "jquery": "3.3.1"
     },
     "devDependencies": {
-        "browser-sync": "2.23.6",
-        "gulp": "^3.9.1",
-        "gulp-clean-css": "3.9.2",
-        "gulp-header": "2.0.1",
-        "gulp-rename": "^1.2.2",
-        "gulp-sass": "^3.1.0",
-        "gulp-uglify": "3.0.0"
+        "browser-sync": "2.24.5",
+        "gulp": "^3.9.1"
     }
 }
