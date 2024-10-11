@@ -1,2 +1,1 @@
-# brianavecchione.com
 Personal Website
