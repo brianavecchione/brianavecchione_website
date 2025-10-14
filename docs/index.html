@@ -91,18 +91,62 @@
   font-weight: 600;
 }
 
+.nav-link {
+  color: #444;
+  font-weight: 500;
+  padding-left: 0;
+}
+
+.nav-link:hover {
+  color: #007bff;
+  text-decoration: underline;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body, html {
+  margin: 0;
+  padding: 0;
+}
+
 
   </style>
 </head>
 
 <body>
+
+<nav class="navbar navbar-expand-md navbar-light bg-light sticky-top">
+  <div class="container">
+    <a class="navbar-brand" href="https://brianavecchione.org/"><b>Briana Vecchione</b></a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse justify-content-end" id="navbarCollapse">
+      <ul class="navbar-nav">
+        <li class="nav-item"><a class="nav-link" href="#bio">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="#publications">Publications</a></li>
+        <li class="nav-item"><a class="nav-link" href="#writing">Public Writing & Policy</a></li>
+        <li class="nav-item"><a class="nav-link" href="#wip">Forthcoming</a></li>
+        <li class="nav-item"><a class="nav-link" href="#talks">Engagements</a></li>
+        <li class="nav-item"><a class="nav-link" href="#updates">Updates</a></li>
+        <li class="nav-item">
+          <a class="nav-link" href="Briana_Vecchione_CV_October_2025.pdf" target="_blank">CV</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
   <div class="container site-wrap">
     <div class="row">
       <!-- Sidebar (25%) -->
       <aside class="col-12 col-left sidebar">
         <div class="sticky text-center">
           <img src="img/BV_headshot2_square.jpg" class="rounded-circle img-fluid" style="width:180px; height:180px; object-fit:cover;">
-          <h4 class="name">Briana Vecchione</h4>
+          <!--<h4 class="name">Briana Vecchione</h4> -->
 
           <div class="icon-bar my-2">
             <a href="https://scholar.google.com/citations?user=VvbIqUIAAAAJ&hl=en" aria-label="Google Scholar">
@@ -126,7 +170,8 @@
           <hr>
 
           <!-- Updates -->
-          <div class="card updates">
+  <section id="updates">
+  <div class="card updates">
   <div class="card-body">
     <h6 class="card-title">Updates</h6>
     <small>
@@ -143,6 +188,7 @@
   </small>
   </div>
 </div>
+</section>
       </aside>
 
       <!-- Main content (75%) -->
@@ -162,9 +208,7 @@
         <!-- Publications -->
         <section id="publications">
           <h5 class="section-title">Publications</h5>
-          <small style="border: 1px solid #ccc; padding: 2px 6px; border-radius: 4px; background-color: #f9f9f9; margin-bottom: 6px;">
-    * indicates peer-reviewed publications
-  </small>
+          <small style="border: 1px solid #ccc; padding: 2px 6px; border-radius: 4px; background-color: #f9f9f9; margin-bottom: 20px;">* indicates peer-reviewed publications</small>
 
            <p>
             <a href="https://journals.sagepub.com/doi/10.1177/20539517251383884">AI is Mental: Evaluating the Role of LLMs in Supporting Mental Health and Well-Being </a>*<br>
@@ -181,25 +225,25 @@
           <p>
             <a href="https://arxiv.org/abs/2402.17861">Towards AI Accountability Infrastructure: Gaps and Opportunities in AI Audit Tooling</a> *<br>
             <small>Victor Ojewale, Ryan Steed, <b>Briana Vecchione</b>, Abeba Birhane, Inioluwa Deborah Raji<br>
-            CHI 2025.</small>
+            ACM CHI 2025.</small>
           </p>
 
           <p>
             <a href="https://ieeexplore.ieee.org/abstract/document/10516659">Algorithm Auditing: The Broken Bus on the Road to Algorithm Accountability</a> *<br>
             <small>Abeba Birhane, Ryan Steed, Victor Ojewale, <b>Briana Vecchione</b>, Inioluwa Deborah Raji<br>
-            SaTML 2024.</small>
+            IEEE SaTML 2024.</small>
           </p>
 
           <p>
             <a href="https://dl.acm.org/doi/10.1145/3630106.3658959">Auditing Work: Exploring the New York City Algorithmic Bias Audit Regime</a> *<br>
             <small>Lara Groves, Jacob Metcalf, Alayna Kennedy, <b>Briana Vecchione</b>, Andrew Strait<br>
-            FAccT 2024. <i>Best Paper Award</i></small>
+            ACM FAccT 2024. <i><b>Best Paper Award</b></i></small>
           </p>
 
           <p>
             <a href="https://dl.acm.org/doi/10.1145/3630106.3658998">Null Compliance: NYC Local Law 144 and the Challenges of Algorithm Accountability</a> *<br>
             <small>Lucas Wright, Roxana Muenster, <b>Briana Vecchione</b>, Tianyao Qu, Pika (Senhuang) Cai, Alan Smith, COMM/INFO 2450 Student Investigators, Jacob Metcalf, J. Nathan Matias<br>
-            FAccT 2024.</small>
+            ACM FAccT 2024.</small>
           </p>
 
           <p>
@@ -211,19 +255,19 @@
           <p>
             <a href="https://dl.acm.org/doi/pdf/10.1145/3465416.3483294">Algorithmic Auditing and Social Justice: Lessons from the History of Audit Studies</a> *<br>
             <small><b>Briana Vecchione</b>, Solon Barocas, Karen Levy<br>
-            EAAMO 2021.</small>
+            ACM EAAMO 2021.</small>
           </p>
 
           <p>
             <a href="https://arxiv.org/abs/1803.09010">Datasheets for Datasets</a> *<br>
             <small>Timnit Gebru, Jamie Morgenstern, <b>Briana Vecchione</b>, Jennifer Wortman Vaughan, Hanna Wallach, Hal Daumé III, Kate Crawford<br>
-            CACM 2021. (Short version: FAccT 2018)</small>
+            ACM CACM 2021. (Short version: ACM FAccT 2018)</small>
           </p>
 
           <p>
             <a href="https://dl.acm.org/doi/10.1145/3397271.3401101">Recommending Podcasts for Cold-Start Users Based on Music Listening and Taste</a> *<br>
             <small>Zahra Nazari, Christophe Charbuillet, Johan Pages, Martin Laurent, Denis Charrier, <b>Briana Vecchione</b>, Benjamin Carterette<br>
-            SIGIR 2020.</small>
+            ACM SIGIR 2020.</small>
           </p>
         </section>
 
@@ -275,7 +319,7 @@
         </section>
 
         <section id="wip">
-          <h5 class="section-title">Select Works in Progress</h5>
+          <h5 class="section-title">Forthcoming Publications</h5>
 
           <p>
             <a href="#">A Chatbot for the Soul: Mental Health Care, Privacy, and Intimacy in AI-Based Conversational Agents</a> *<br>
